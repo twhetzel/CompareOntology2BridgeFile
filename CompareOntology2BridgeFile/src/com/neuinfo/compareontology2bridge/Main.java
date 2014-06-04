@@ -54,14 +54,15 @@ public class Main {
 	public static OWLOntology loadOntologyFile() throws OWLOntologyCreationException {
 		// Load ontology from web
 		//TODO Pass ontology location as a command-line argument 
-		IRI ONTOLOGY = IRI.create("http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Subcellular.owl");
-		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		OWLOntology ontology = manager.loadOntology(ONTOLOGY); 
+//		IRI ONTOLOGY = IRI.create("http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Subcellular.owl");
+//		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+//		OWLOntology ontology = manager.loadOntology(ONTOLOGY); 
 
 		// Load ontology from local file
-		/**File file = new File("/Users/whetzel/Desktop/NIF-Subcellular.owl");
-        OWLOntology localOntology = manager.loadOntologyFromOntologyDocument(file);
-		 */
+		File file = new File("/Users/whetzel/Documents/workspace/OntologyFiles/NIF-Subcellular-ORIG.owl");
+		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
+		 
 		System.out.println("Loaded ontology: " + ontology);
 		return ontology;
 	}
@@ -78,14 +79,7 @@ public class Main {
 		int size = allClasses.size();
 		ArrayList<String> terms = new ArrayList<String>();
 		System.out.println("Total number of classes: "+size);
-//		for (OWLClass owlClass : allClasses) {
-//			System.out.println(owlClass);
-//
-//			// Get IRI Fragment
-//			String iri = owlClass.getIRI().getFragment();
-//			//System.out.println("OWLCLASS IRI: "+iri+"\n");
-//			terms.add(iri);
-//		}	
+		
 		return allClasses;
 	}
 
@@ -98,14 +92,16 @@ public class Main {
 	private static OWLOntology loadBridgeFile() throws OWLOntologyCreationException {
 		// Load ontology from web
 		//TODO Pass ontology location as a command-line argument 
-		IRI ONTOLOGY = IRI.create("http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GO-CC-Bridge.owl");
+		//IRI ONTOLOGY = IRI.create("http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GO-CC-Bridge.owl");
+		IRI ONTOLOGY = IRI.create("http://geneontology.org/ontology/extensions/go-nifstd-bridge.owl");
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLOntology ontology = manager.loadOntology(ONTOLOGY); 
 
 		// Load ontology from local file
-		/**File file = new File("/Users/whetzel/Desktop/NIF-Subcellular.owl");
-		        OWLOntology localOntology = manager.loadOntologyFromOntologyDocument(file);
-		 */
+		//File file = new File("/Users/whetzel/Documents/workspace/OntologyFiles/NIF-GO-CC-Bridge-MOD.owl");
+		//OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		//OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
+		
 		System.out.println("Loaded ontology: " + ontology);
 		return ontology;
 	}
@@ -142,27 +138,26 @@ public class Main {
 			OWLOntology bridgeOntology) {
 		// Iterate through Ontology
 		int size = allClasses.size();
-		ArrayList<String> terms = new ArrayList<String>();
-		
-		//Set<OWLClass> noEquivalentClass = new Set<OWLClass>();
-		
 		System.out.println("Total number of classes: "+size);
+		
+		//ArrayList<String> terms = new ArrayList<String>();
+		//Set<OWLClass> noEquivalentClass = new Set<OWLClass>();
 		ArrayList<String> noEquivClass = new ArrayList<String>();
 		
 		for (OWLClass owlClass : allClasses) {
-			//System.out.println("OWLCLASSES: "+owlClass); 
+			System.out.println("OWLCLASS: "+owlClass); 
 
 			bridgeOntology.getEquivalentClassesAxioms(owlClass);
 			System.out.println("OWLCLASS: "+owlClass);
-			//System.out.println ("EQUIVCLASSES: "+bridgeOntology.getEquivalentClassesAxioms(owlClass));
+			System.out.println ("EQUIVCLASSES: "+bridgeOntology.getEquivalentClassesAxioms(owlClass)+"\n");
 			
 			if (bridgeOntology.getEquivalentClassesAxioms(owlClass).isEmpty()) {
 				noEquivClass.add(owlClass.toString());
 				
 				// Get IRI Fragment - alternative approach
-				String iri = owlClass.getIRI().getFragment();
-				System.out.println("NO EQUIV CLASS: "+"("+owlClass+")"+"\n");
-				terms.add(iri);
+//				String iri = owlClass.getIRI().getFragment();
+//				System.out.println("NO EQUIV CLASS: "+"("+owlClass+")"+"\n");
+//				terms.add(iri);
 			}
 			else {
 				System.out.println ("EQUIVCLASSES: "+bridgeOntology.getEquivalentClassesAxioms(owlClass));
@@ -190,7 +185,7 @@ public class Main {
  
 			FileWriter fw = new FileWriter(file.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
-			bw.write("Total number of Classes with an Equivalent Axiom: "+size+"\n");
+			bw.write("Total number of Classes WITHOUT an Equivalent Axiom: "+size+"\n");
 			for (String term : noEquivClass) {
 				//bw.write(noEquivClass.toString());
 				bw.write(term+"\n");
