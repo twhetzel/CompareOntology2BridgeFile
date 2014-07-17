@@ -22,6 +22,8 @@ public class Main {
 	 * Bridge ontology file to confirm all Classes in the Ontology file are
 	 * included in the Bridge file
 	 * 
+	 * NOTE: Some GO files on the web use update NIF IRIs (http://uri.neuinfo.org/nif/nifstd/someNumber) 
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -33,7 +35,7 @@ public class Main {
 			//System.out.println("ALLCLASSES: "+allClasses);
 
 			OWLOntology bridgeOntology = loadBridgeFile();
-			
+
 			// Check that all terms in Ontology file have an Equivalent class in the Bridge ontology file
 			searchForClassInBridgeOntology(allClasses, bridgeOntology);
 
@@ -52,22 +54,22 @@ public class Main {
 	 **/
 	@Test
 	public static OWLOntology loadOntologyFile() throws OWLOntologyCreationException {
-		// Load ontology from web
 		//TODO Pass ontology location as a command-line argument 
-//		IRI ONTOLOGY = IRI.create("http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Subcellular.owl");
-//		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-//		OWLOntology ontology = manager.loadOntology(ONTOLOGY); 
+		// Load ontology from web
+		IRI ONTOLOGY = IRI.create("http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Subcellular.owl"); // IRIs not updated, use with NIF-GO-CC-Bridge.owl only!
+		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		OWLOntology ontology = manager.loadOntology(ONTOLOGY); 
 
 		// Load ontology from local file
-		File file = new File("/Users/whetzel/Documents/workspace/OntologyFiles/NIF-Subcellular-ORIG.owl");
+		/*File file = new File("/Users/whetzel/Documents/workspace/OntologyFiles/NIF-Subcellular-ORIG.owl");  //updated IRIs, use with go-nifstd-bridge.owl only
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
-		 
+*/
 		System.out.println("Loaded ontology: " + ontology);
 		return ontology;
 	}
 
-
+	
 	/**
 	 * Get all Classes in ontology file
 	 * @param manager
@@ -77,12 +79,11 @@ public class Main {
 	private static Set<OWLClass> getAllClasses(OWLOntology ontology) {
 		Set<OWLClass> allClasses = ontology.getClassesInSignature();
 		int size = allClasses.size();
-		ArrayList<String> terms = new ArrayList<String>();
-		System.out.println("Total number of classes: "+size);
 		
+		System.out.println("Total number of classes: "+size);
 		return allClasses;
 	}
-
+	
 
 	/**
 	 * Load ontology Bridge file
@@ -90,45 +91,18 @@ public class Main {
 	 * @throws OWLOntologyCreationException 
 	 */
 	private static OWLOntology loadBridgeFile() throws OWLOntologyCreationException {
-		// Load ontology from web
 		//TODO Pass ontology location as a command-line argument 
-		//IRI ONTOLOGY = IRI.create("http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GO-CC-Bridge.owl");
-		IRI ONTOLOGY = IRI.create("http://geneontology.org/ontology/extensions/go-nifstd-bridge.owl");
+		// Load ontology from web
+		IRI NIF_GO_CC_BRIDGE_ONTOLOGY = IRI.create("http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GO-CC-Bridge.owl"); //Use with NIF-Subcellular.owl from web so IRI formats match 
+		IRI GO_NIFSTD_BRIDGE_ONTOLOGY = IRI.create("http://geneontology.org/ontology/extensions/go-nifstd-bridge.owl"); // Compare to Local NIF-Subcellular.owl file with updated IRIs
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		OWLOntology ontology = manager.loadOntology(ONTOLOGY); 
-
-		// Load ontology from local file
-		//File file = new File("/Users/whetzel/Documents/workspace/OntologyFiles/NIF-GO-CC-Bridge-MOD.owl");
-		//OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		//OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
-		
+		OWLOntology ontology = manager.loadOntology(NIF_GO_CC_BRIDGE_ONTOLOGY); 
+		 
 		System.out.println("Loaded ontology: " + ontology);
 		return ontology;
 	}
 
 
-	/**
-	 * Get all classes in Bridge file
-	 * @param manager
-	 * @param ontology
-	 */
-	private static void getBridgeClasses(OWLOntology ontology) {
-		Set<OWLClass> allClasses = ontology.getClassesInSignature();
-		int size = allClasses.size();
-		ArrayList<String> terms = new ArrayList<String>();
-		System.out.println("Total number of classes: "+size);
-		for (OWLClass owlClass : allClasses) {
-			System.out.println(owlClass);
-			//ontology.getEquivalentClassesAxioms(owlClass);
-			//System.out.println("EquivClasses: "+ontology.getEquivalentClassesAxioms(owlClass));
-			// Get IRI Fragment
-			String iri = owlClass.getIRI().getFragment();
-			System.out.println("OWLCLASS IRI: "+iri+"\n");
-			terms.add(iri);
-		}	
-	}
-
-	
 	/**
 	 * Check for Ontology Class in Bridge ontology file
 	 * @param ontology
@@ -139,59 +113,52 @@ public class Main {
 		// Iterate through Ontology
 		int size = allClasses.size();
 		System.out.println("Total number of classes: "+size);
-		
-		//ArrayList<String> terms = new ArrayList<String>();
-		//Set<OWLClass> noEquivalentClass = new Set<OWLClass>();
+
 		ArrayList<String> noEquivClass = new ArrayList<String>();
-		
+
 		for (OWLClass owlClass : allClasses) {
-			System.out.println("OWLCLASS: "+owlClass); 
+			System.out.println("NIFSTD OWLCLASS: "+owlClass); 
 
 			bridgeOntology.getEquivalentClassesAxioms(owlClass);
-			System.out.println("OWLCLASS: "+owlClass);
+			System.out.println("BRIDGE OWLCLASS: "+owlClass);
 			System.out.println ("EQUIVCLASSES: "+bridgeOntology.getEquivalentClassesAxioms(owlClass)+"\n");
-			
+
 			if (bridgeOntology.getEquivalentClassesAxioms(owlClass).isEmpty()) {
 				noEquivClass.add(owlClass.toString());
-				
-				// Get IRI Fragment - alternative approach
-//				String iri = owlClass.getIRI().getFragment();
-//				System.out.println("NO EQUIV CLASS: "+"("+owlClass+")"+"\n");
-//				terms.add(iri);
 			}
 			else {
 				System.out.println ("EQUIVCLASSES: "+bridgeOntology.getEquivalentClassesAxioms(owlClass));
 				System.out.println("All looks good\n");
 			}
 		}	
+		// Write out results to file 
 		writeFile(noEquivClass);
-		//return ; 
 	}
 
-	
+
 	/**
 	 * Write content to output file
 	 * @param noEquivClass 
 	 */
 	public static void writeFile(ArrayList<String> noEquivClass) {
 		try {
+			//TODO Pass output file name as parameter  
 			File file = new File("./noEquivClassList.txt");
 			int size = noEquivClass.size();
-			
-			// if file doesnt exists, then create it
+
+			// If file doesn't exists, then create it
 			if (!file.exists()) {
 				file.createNewFile();
 			}
- 
+
 			FileWriter fw = new FileWriter(file.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write("Total number of Classes WITHOUT an Equivalent Axiom: "+size+"\n");
 			for (String term : noEquivClass) {
-				//bw.write(noEquivClass.toString());
 				bw.write(term+"\n");
 			}
 			bw.close();
- 
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
