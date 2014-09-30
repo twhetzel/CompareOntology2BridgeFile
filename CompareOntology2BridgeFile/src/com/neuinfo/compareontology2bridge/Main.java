@@ -6,8 +6,13 @@ import java.util.Set;
 import org.junit.Test;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAnnotation;
 import org.semanticweb.owlapi.model.OWLAnnotationProperty;
 import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLClassExpression;
+import org.semanticweb.owlapi.model.OWLDataFactory;
+import org.semanticweb.owlapi.model.OWLEntity;
+import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -110,9 +115,10 @@ public class Main {
 	 * Check for Ontology Class in Bridge ontology file
 	 * @param ontology
 	 * @param bridgeOntology
+	 * @throws OWLOntologyCreationException 
 	 */
 	private static void searchForClassInBridgeOntology(Set<OWLClass> allClasses,
-			OWLOntology bridgeOntology) {
+			OWLOntology bridgeOntology) throws OWLOntologyCreationException {
 		// Iterate through Ontology
 		int size = allClasses.size();
 		System.out.println("Total number of classes: "+size);
@@ -142,8 +148,9 @@ public class Main {
 	/**
 	 * Write content to output file
 	 * @param noEquivClass 
+	 * @throws OWLOntologyCreationException 
 	 */
-	public static void writeFile(ArrayList<String> noEquivClass) {
+	public static void writeFile(ArrayList<String> noEquivClass) throws OWLOntologyCreationException {
 		try {
 			//TODO Pass output file name as parameter  
 			File file = new File("./noEquivClassList_go-nifstd_09292014-B.txt");
@@ -158,7 +165,14 @@ public class Main {
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write("Total number of Classes WITHOUT an Equivalent Axiom: "+size+"\n");
 			for (String term : noEquivClass) {
-				bw.write(term+"\n");
+				bw.write(term+"\t");
+				//TODO Get Class label and parent Class label
+				// First, get rdfs:label of Class
+				ArrayList<String> termInfo = getClassLabelAndParent(term);
+				for (String s : termInfo) {
+					bw.write("\t"+s);
+				}
+				bw.write("\n");
 			}
 			bw.close();
 
@@ -167,6 +181,63 @@ public class Main {
 		}
 	}
 
+
+	private static ArrayList<String> getClassLabelAndParent(String term) throws OWLOntologyCreationException {
+		//System.out.println("DEBUG Class IRI: "+term);
+		
+		// Open ontology again to get term details
+		File file = new File("/Users/whetzel/Documents/workspace/OntologyFiles/NIF-Subcellular-ORIG.owl");  //updated IRIs, use with go-nifstd-bridge.owl only
+		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
+		
+		OWLDataFactory df = manager.getOWLDataFactory();
+		OWLAnnotationProperty label = df
+                .getOWLAnnotationProperty(OWLRDFVocabulary.RDFS_LABEL.getIRI());
+		//System.out.println("LabelProp: "+label);
+		
+		// Iterate through all classes and for those that match list of terms without an equivalent class, get term details
+		ArrayList<String> termInfo = new ArrayList();
+		for (OWLClass cls : ontology.getClassesInSignature()) {
+			if (cls.toString().equals( term )) {
+				
+				// Get term label
+				for (OWLAnnotation annotation : cls.getAnnotations(ontology, label)) {
+					if (annotation.getValue() instanceof OWLLiteral) {
+						OWLLiteral val = (OWLLiteral) annotation.getValue();
+						System.out.println("Missing Equivalent Class: "+term);
+						System.out.println("Class: "+cls + " -> " + val.getLiteral());
+						termInfo.add(val.getLiteral());
+					}
+				}
+				
+				// Get parent IRI and term label 
+				Set<OWLClassExpression> superClasses = cls.getSuperClasses(ontology);
+				System.out.println("SuperClasses: "+superClasses);
+				// For each superClass, get the term label if the superClass is not anonymous
+				for (OWLClassExpression superCls :  superClasses) {
+					if (!superCls.isAnonymous()) {
+						System.out.println("SuperClass is not Anonymous");
+						termInfo.add(superCls.toString());
+						for (OWLAnnotation annotation : ((OWLEntity) superCls).getAnnotations(ontology, label)) {
+							if (annotation.getValue() instanceof OWLLiteral) {
+								OWLLiteral val = (OWLLiteral) annotation.getValue();
+								System.out.println("SuperClass: "+superCls + " -> " + val.getLiteral());
+								termInfo.add(val.getLiteral());	
+							}
+						}
+					}
+					else {
+						System.out.println("SuperClass IS Anonymous");
+					}
+					System.out.println();
+				}
+				
+				
+			
+			}
+		}
+		return termInfo;
+	}
 }
 
 
