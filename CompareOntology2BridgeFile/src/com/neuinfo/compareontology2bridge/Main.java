@@ -6,10 +6,12 @@ import java.util.Set;
 import org.junit.Test;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAnnotationProperty;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -22,7 +24,7 @@ public class Main {
 	 * Bridge ontology file to confirm all Classes in the Ontology file are
 	 * included in the Bridge file
 	 * 
-	 * NOTE: Some GO files on the web use update NIF IRIs (http://uri.neuinfo.org/nif/nifstd/someNumber) 
+	 * NOTE: Some GO files on the web use updated NIF IRIs (http://uri.neuinfo.org/nif/nifstd/someNumber) 
 	 * 
 	 * @param args
 	 */
@@ -56,15 +58,16 @@ public class Main {
 	public static OWLOntology loadOntologyFile() throws OWLOntologyCreationException {
 		//TODO Pass ontology location as a command-line argument 
 		// Load ontology from web
-		IRI ONTOLOGY = IRI.create("http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Subcellular.owl"); // IRIs not updated, use with NIF-GO-CC-Bridge.owl only!
+		/*IRI ONTOLOGY = IRI.create("http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Subcellular.owl"); // IRIs not updated, use with NIF-GO-CC-Bridge.owl only!
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLOntology ontology = manager.loadOntology(ONTOLOGY); 
-
+*/
+		
 		// Load ontology from local file
-		/*File file = new File("/Users/whetzel/Documents/workspace/OntologyFiles/NIF-Subcellular-ORIG.owl");  //updated IRIs, use with go-nifstd-bridge.owl only
+		File file = new File("/Users/whetzel/Documents/workspace/OntologyFiles/NIF-Subcellular-ORIG.owl");  //updated IRIs, use with go-nifstd-bridge.owl only
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
-*/
+
 		System.out.println("Loaded ontology: " + ontology);
 		return ontology;
 	}
@@ -93,10 +96,10 @@ public class Main {
 	private static OWLOntology loadBridgeFile() throws OWLOntologyCreationException {
 		//TODO Pass ontology location as a command-line argument 
 		// Load ontology from web
-		IRI NIF_GO_CC_BRIDGE_ONTOLOGY = IRI.create("http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GO-CC-Bridge.owl"); //Use with NIF-Subcellular.owl from web so IRI formats match 
+		//IRI NIF_GO_CC_BRIDGE_ONTOLOGY = IRI.create("http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GO-CC-Bridge.owl"); //Use with NIF-Subcellular.owl from web so IRI formats match 
 		IRI GO_NIFSTD_BRIDGE_ONTOLOGY = IRI.create("http://geneontology.org/ontology/extensions/go-nifstd-bridge.owl"); // Compare to Local NIF-Subcellular.owl file with updated IRIs
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		OWLOntology ontology = manager.loadOntology(NIF_GO_CC_BRIDGE_ONTOLOGY); 
+		OWLOntology ontology = manager.loadOntology(GO_NIFSTD_BRIDGE_ONTOLOGY); 
 		 
 		System.out.println("Loaded ontology: " + ontology);
 		return ontology;
@@ -127,8 +130,8 @@ public class Main {
 				noEquivClass.add(owlClass.toString());
 			}
 			else {
-				System.out.println ("EQUIVCLASSES: "+bridgeOntology.getEquivalentClassesAxioms(owlClass));
-				System.out.println("All looks good\n");
+				System.out.print("Looks good - ");
+				System.out.println ("Found an Equivalent Class: "+bridgeOntology.getEquivalentClassesAxioms(owlClass)+"\n");
 			}
 		}	
 		// Write out results to file 
@@ -143,7 +146,7 @@ public class Main {
 	public static void writeFile(ArrayList<String> noEquivClass) {
 		try {
 			//TODO Pass output file name as parameter  
-			File file = new File("./noEquivClassList.txt");
+			File file = new File("./noEquivClassList_go-nifstd_09292014-B.txt");
 			int size = noEquivClass.size();
 
 			// If file doesn't exists, then create it
