@@ -1,0 +1,223 @@
+Total number of Classes WITHOUT an Equivalent Axiom: 222
+<http://uri.neuinfo.org/nif/nifstd/sao3826089237>		Aggregate Object	<http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate>
+<http://uri.neuinfo.org/nif/nifstd/birnlex_878>		Cytoskeletal system	<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>
+<http://uri.neuinfo.org/nif/nifstd/birnlex_879>		Intermediate filament	<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>
+<http://uri.neuinfo.org/nif/nifstd/sao-965204139>		Branched Dendritic Spine	<http://uri.neuinfo.org/nif/nifstd/sao1799103720>	Dendritic Spine
+<http://uri.neuinfo.org/nif/nifstd/sao3089754107>		RER Membrane	<http://uri.neuinfo.org/nif/nifstd/sao830981606>	Intracellular Membrane
+<http://uri.neuinfo.org/nif/nifstd/birnlex_886>		Post synaptic density	<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>
+<http://uri.neuinfo.org/nif/nifstd/birnlex_1142>		Neuropil	<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>
+<http://uri.neuinfo.org/nif/nifstd/sao-420949334>		Regional Part Of Neuron Process	<http://uri.neuinfo.org/nif/nifstd/sao864921383>	Regional Part Of Neuron
+<http://uri.neuinfo.org/nif/nifstd/sao-188049490>		Node Of Ranvier Axon	<http://uri.neuinfo.org/nif/nifstd/sao340271629>	Regional Part Of Cell
+<http://uri.neuinfo.org/nif/nifstd/sao1038025871>		Polyribosome	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100315>	Subcellular entity
+<http://uri.neuinfo.org/nif/nifstd/birnlex_888>		Microfilament	<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>
+<http://uri.neuinfo.org/nif/nifstd/sao2048701763>		Perivascular Endfoot	<http://uri.neuinfo.org/nif/nifstd/sao388182739>	Endfoot
+<http://uri.neuinfo.org/nif/nifstd/sao1642908940>		Spine Neck	<http://uri.neuinfo.org/nif/nifstd/sao866168499>	Regional Part Of Spine
+<http://uri.neuinfo.org/nif/nifstd/sao1573004591>		Peripheral Astrocyte Process	<http://uri.neuinfo.org/nif/nifstd/sao1630537580>	Astrocyte Process
+<http://uri.neuinfo.org/nif/nifstd/sao124393998>		Endoplasmic Reticulum Exit Site	<http://uri.neuinfo.org/nif/nifstd/sao2019617624>	Regional Part Of RER
+<http://uri.neuinfo.org/nif/nifstd/sao1253297813>		Glial Subcompartment	<http://uri.neuinfo.org/nif/nifstd/sao895885284>	Regional Part Of Glial Cell
+<http://uri.neuinfo.org/nif/nifstd/sao831502550>		Regional Part Of Oligodendrocyte	<http://uri.neuinfo.org/nif/nifstd/sao895885284>	Regional Part Of Glial Cell
+<http://uri.neuinfo.org/nif/nifstd/sao1039242387>		Trans Face	<http://uri.neuinfo.org/nif/nifstd/sao1546288504>	Regional Part Of Golgi
+<http://uri.neuinfo.org/nif/nifstd/sao9515821206>		Neuritic plaque	<http://uri.neuinfo.org/nif/nifstd/sao9137852997>	Plaque
+<http://uri.neuinfo.org/nif/nifstd/sao632188024>		Cis Face	<http://uri.neuinfo.org/nif/nifstd/sao1546288504>	Regional Part Of Golgi
+<http://uri.neuinfo.org/nif/nifstd/sao-1863852493>		Glial Filament	<http://uri.neuinfo.org/nif/nifstd/sao952483289>	Intermediate Filament
+<http://uri.neuinfo.org/nif/nifstd/sao120818728>		Lumenal Surface	<http://uri.neuinfo.org/nif/nifstd/sao1329750433>	Membrane Surface
+<http://uri.neuinfo.org/nif/nifstd/sao113580911>		Regional Part Of Nucleolus	<http://uri.neuinfo.org/nif/nifstd/sao-1819020575>	Regional Part Of Cell Component
+<http://uri.neuinfo.org/nif/nifstd/nlx_sub_1008001>		Principal neuron role	<http://uri.neuinfo.org/nif/nifstd/birnlex_2537>	Functional role of nerve cell
+<http://uri.neuinfo.org/nif/nifstd/sao1329750433>		Membrane Surface	<http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary>
+<http://uri.neuinfo.org/nif/nifstd/sao553711217>		Spine Related Site	<http://www.ifomis.org/bfo/1.1/snap#Site>
+<http://uri.neuinfo.org/nif/nifstd/sao936144858>		Paranode Axon	<http://uri.neuinfo.org/nif/nifstd/sao340271629>	Regional Part Of Cell
+<http://uri.neuinfo.org/nif/nifstd/sao1950673097>		Schaffer Collateral	<http://uri.neuinfo.org/nif/nifstd/sao1470140754>	Axon Collateral
+<http://uri.neuinfo.org/nif/nifstd/birnlex_788>		Microtubule	<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>
+<http://uri.neuinfo.org/nif/nifstd/sao420754792>		Regional Part Of Dendrite	<http://uri.neuinfo.org/nif/nifstd/sao-420949334>	Regional Part Of Neuron Process
+<http://uri.neuinfo.org/nif/nifstd/sao-206157942>		Internode	<http://uri.neuinfo.org/nif/nifstd/sao-596411490>	Node Related Site
+<http://uri.neuinfo.org/nif/nifstd/sao-1819020575>		Regional Part Of Cell Component	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100315>	Subcellular entity
+<http://uri.neuinfo.org/nif/nifstd/sao26622963>		Protein
+<http://uri.neuinfo.org/nif/nifstd/sao1048004962>		Tyrosine Kinase Receptor	<http://uri.neuinfo.org/nif/nifstd/sao452970150>	Membrane Receptor
+<http://uri.neuinfo.org/nif/nifstd/sao1004601938>		Dense Material	<http://uri.neuinfo.org/nif/nifstd/sao1682692988>	Regional Part Of Spine Apparatus
+<http://uri.neuinfo.org/nif/nifstd/sao7547390221>		Collagen Fibril	<http://uri.neuinfo.org/nif/nifstd/sao5051906853>	Fibril
+<http://uri.neuinfo.org/nif/nifstd/sao2064469343>		Vascular Endfoot	<http://uri.neuinfo.org/nif/nifstd/sao877341397>	Regional Part Of Tanycyte
+<http://uri.neuinfo.org/nif/nifstd/sao-343550527>		Mitochondrial Space	<http://uri.neuinfo.org/nif/nifstd/sao1289190043>	Cellular Space
+<http://uri.neuinfo.org/nif/nifstd/sao-596411490>		Node Related Site	<http://www.ifomis.org/bfo/1.1/snap#Site>
+<http://uri.neuinfo.org/nif/nifstd/sao1877927224>		Apical Pole Of Neuron	<http://www.ifomis.org/bfo/1.1/snap#Site>
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090513>		Extracellular matrix	<http://uri.neuinfo.org/nif/nifstd/sao9117790637>	Extracellular Structure
+<http://uri.neuinfo.org/nif/nifstd/sao830981606>		Intracellular Membrane	<http://uri.neuinfo.org/nif/nifstd/sao6433132645>	Cellular Membrane
+<http://uri.neuinfo.org/nif/nifstd/sao386529203>		Pre-synaptic Component	<http://uri.neuinfo.org/nif/nifstd/sao1784069613>	Synaptic Component
+<http://uri.neuinfo.org/nif/nifstd/sao187426937>		Synaptic Bouton	<http://uri.neuinfo.org/nif/nifstd/sao2007137787>	Axon Terminal
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090510>		Regional Part Of Pyramidal cell axon	<http://uri.neuinfo.org/nif/nifstd/sao280355188>	Regional Part Of Axon
+<http://uri.neuinfo.org/nif/nifstd/sao-250931889>		Neuron Protrusion	<http://uri.neuinfo.org/nif/nifstd/sao864921383>	Regional Part Of Neuron
+<http://uri.neuinfo.org/nif/nifstd/sao1514682949>		Cytoplasmic Surface	<http://uri.neuinfo.org/nif/nifstd/sao1329750433>	Membrane Surface
+<http://uri.neuinfo.org/nif/nifstd/sao978443756>		Endosomal Membrane	<http://uri.neuinfo.org/nif/nifstd/sao830981606>	Intracellular Membrane
+<http://uri.neuinfo.org/nif/nifstd/sao866168499>		Regional Part Of Spine	<http://uri.neuinfo.org/nif/nifstd/sao864921383>	Regional Part Of Neuron
+<http://uri.neuinfo.org/nif/nifstd/sao517367952>		Endocytic Zone	<http://uri.neuinfo.org/nif/nifstd/sao553711217>	Spine Related Site
+<http://uri.neuinfo.org/nif/nifstd/sao-17780464455>		Intercellular Gap Janction Channel	<http://uri.neuinfo.org/nif/nifstd/sao-3012335077>	Junction Complex
+<http://uri.neuinfo.org/nif/nifstd/sao248349196>		Neurotubule	<http://uri.neuinfo.org/nif/nifstd/sao1846835077>	Microtubule
+<http://uri.neuinfo.org/nif/nifstd/sao-820130069>		Pyramidal Neuronal Cell Body	<http://uri.neuinfo.org/nif/nifstd/sao1044911821>	Neuronal Cell Body
+<http://uri.neuinfo.org/nif/nifstd/sao340271629>		Regional Part Of Cell	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100315>	Subcellular entity
+<http://uri.neuinfo.org/nif/nifstd/sao-876577163>		Mushroom Dendritic Spine	<http://uri.neuinfo.org/nif/nifstd/sao1799103720>	Dendritic Spine
+<http://uri.neuinfo.org/nif/nifstd/sao-946766835>		Synaptic Site	<http://uri.neuinfo.org/nif/nifstd/sao1922892319>	Intercellular Junction Site
+<http://uri.neuinfo.org/nif/nifstd/sao-1348591767>		Branch Point Of Dendrite	<http://uri.neuinfo.org/nif/nifstd/sao420754792>	Regional Part Of Dendrite
+<http://uri.neuinfo.org/nif/nifstd/sao1784069613>		Synaptic Component	<http://uri.neuinfo.org/nif/nifstd/sao-1337158144>	Cellular Component
+<http://uri.neuinfo.org/nif/nifstd/sao1078172392>		Trunk	<http://uri.neuinfo.org/nif/nifstd/sao420754792>	Regional Part Of Dendrite
+<http://uri.neuinfo.org/nif/nifstd/sao1232858786>		Thin Dendritic Spine	<http://uri.neuinfo.org/nif/nifstd/sao1799103720>	Dendritic Spine
+<http://uri.neuinfo.org/nif/nifstd/sao-699412220>		Regional Part Of SER	<http://uri.neuinfo.org/nif/nifstd/sao-1819020575>	Regional Part Of Cell Component
+<http://uri.neuinfo.org/nif/nifstd/sao1164727693>		Glutamate Receptor	<http://uri.neuinfo.org/nif/nifstd/sao26622963>	Protein
+<http://uri.neuinfo.org/nif/nifstd/sao1311109124>		Electrotonic Synapse	<http://uri.neuinfo.org/nif/nifstd/sao914572699>	Synapse
+<http://uri.neuinfo.org/nif/nifstd/sao120573470>		Cellular Inclusion	<http://uri.neuinfo.org/nif/nifstd/sao-1337158144>	Cellular Component
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090504>		Thalamic glomerulus	<http://uri.neuinfo.org/nif/nifstd/sao587858733>	Glomerulus
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090503>		Olfactory glomerulus	<http://uri.neuinfo.org/nif/nifstd/sao587858733>	Glomerulus
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090506>		Axon bundle	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100315>	Subcellular entity
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090505>		Encapsulated nerve ending	<http://uri.neuinfo.org/nif/nifstd/sao508165343>	Supra Cellular Structure
+<http://uri.neuinfo.org/nif/nifstd/sao1682692988>		Regional Part Of Spine Apparatus	<http://uri.neuinfo.org/nif/nifstd/sao-1819020575>	Regional Part Of Cell Component
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090502>		Cerebellar glomerulus	<http://uri.neuinfo.org/nif/nifstd/sao587858733>	Glomerulus
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090501>		Triad	<http://uri.neuinfo.org/nif/nifstd/sao205380252>	Neuropil
+<http://uri.neuinfo.org/nif/nifstd/sao1524397168>		Junctional Site	<http://uri.neuinfo.org/nif/nifstd/sao-946766835>	Synaptic Site
+<http://uri.neuinfo.org/nif/nifstd/sao-1488888179>		Pre-synaptic Ribbon	<http://uri.neuinfo.org/nif/nifstd/sao386529203>	Pre-synaptic Component
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090508>		Perforant path	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090506>	Axon bundle
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090507>		Ipsilateral associatioinal commissural projection	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090506>	Axon bundle
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090509>		Schaffer collaterals	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090506>	Axon bundle
+<http://uri.neuinfo.org/nif/nifstd/sao553737851>		Spinule	<http://uri.neuinfo.org/nif/nifstd/sao866168499>	Regional Part Of Spine
+<http://uri.neuinfo.org/nif/nifstd/sao1246280606>		Synthetic Enzyme
+<http://uri.neuinfo.org/nif/nifstd/FMA_83604>		Pacinian corpuscle	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090505>	Encapsulated nerve ending
+<http://uri.neuinfo.org/nif/nifstd/sao-1337158144>		Cellular Component	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100315>	Subcellular entity
+<http://uri.neuinfo.org/nif/nifstd/FMA_83606>		Merkels disc	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090505>	Encapsulated nerve ending
+<http://uri.neuinfo.org/nif/nifstd/FMA_83605>		Meissners corpuscle	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090505>	Encapsulated nerve ending
+<http://uri.neuinfo.org/nif/nifstd/sao830092290>		Internode Axon	<http://uri.neuinfo.org/nif/nifstd/sao340271629>	Regional Part Of Cell
+<http://uri.neuinfo.org/nif/nifstd/sao952643730>		Spine Head	<http://uri.neuinfo.org/nif/nifstd/sao866168499>	Regional Part Of Spine
+<http://uri.neuinfo.org/nif/nifstd/sao1447478620>		Pial Endfoot	<http://uri.neuinfo.org/nif/nifstd/sao877341397>	Regional Part Of Tanycyte
+<http://uri.neuinfo.org/nif/nifstd/sao1970895398>		Cell Regional Part Aggregate Object	<http://uri.neuinfo.org/nif/nifstd/sao340271629>	Regional Part Of Cell
+<http://uri.neuinfo.org/nif/nifstd/sao1590928667>		Regional Part Of Spiny Dendrite	<http://uri.neuinfo.org/nif/nifstd/sao183270081>	Subregional Part Of Neuron Process
+<http://uri.neuinfo.org/nif/nifstd/sao2007137787>		Axon Terminal	<http://uri.neuinfo.org/nif/nifstd/sao280355188>	Regional Part Of Axon
+<http://uri.neuinfo.org/nif/nifstd/sao195217619>		Regional Part Of Schwann Cell	<http://uri.neuinfo.org/nif/nifstd/sao895885284>	Regional Part Of Glial Cell
+<http://www.ifomis.org/bfo/1.1/snap#Site>	
+<http://uri.neuinfo.org/nif/nifstd/sao9137852997>		Plaque	<http://uri.neuinfo.org/nif/nifstd/sao9117790637>	Extracellular Structure
+<http://uri.neuinfo.org/nif/nifstd/sao7474011676>		Alpha-Synuclein Fibril	<http://uri.neuinfo.org/nif/nifstd/sao5051906853>	Fibril
+<http://uri.neuinfo.org/nif/nifstd/birnlex_846>		Neurofilament	<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>
+<http://uri.neuinfo.org/nif/nifstd/sao-1686050947>		Regional Part Of Mitochondrial Membrane	<http://uri.neuinfo.org/nif/nifstd/sao-1819020575>	Regional Part Of Cell Component
+<http://uri.neuinfo.org/nif/nifstd/sao1045389829>		Mitochondrial Membrane	<http://uri.neuinfo.org/nif/nifstd/sao830981606>	Intracellular Membrane
+<http://uri.neuinfo.org/nif/nifstd/sao1342297498>		Amyloid Fibril	<http://uri.neuinfo.org/nif/nifstd/sao5051906853>	Fibril
+<http://uri.neuinfo.org/nif/nifstd/sao2017162875>		Age Associated	<http://uri.neuinfo.org/nif/nifstd/sao120573470>	Cellular Inclusion
+<http://uri.neuinfo.org/nif/nifstd/sao700839054>		Gap Junction Plaque	<http://uri.neuinfo.org/nif/nifstd/sao1395777368>	Intercellular Junction
+<http://uri.neuinfo.org/nif/nifstd/sao1191319089>		Juxta Paranode Axon	<http://uri.neuinfo.org/nif/nifstd/sao340271629>	Regional Part Of Cell
+<http://uri.neuinfo.org/nif/nifstd/sao587592318>		Neurotransmitter receptor role	<http://www.ifomis.org/bfo/1.1/snap#Role>
+<http://uri.neuinfo.org/nif/nifstd/sao1291545653>		Membrane Bound Ribosome	<http://uri.neuinfo.org/nif/nifstd/sao1429207766>	Ribosome
+<http://uri.neuinfo.org/nif/nifstd/sao1842028314>		SER Subcomponent	<http://uri.neuinfo.org/nif/nifstd/sao628508602>	Cellular Subcomponent
+<http://uri.neuinfo.org/nif/nifstd/sao6433132645>		Cellular Membrane	<http://uri.neuinfo.org/nif/nifstd/sao-1337158144>	Cellular Component
+<http://uri.neuinfo.org/nif/nifstd/sao2019617624>		Regional Part Of RER	<http://uri.neuinfo.org/nif/nifstd/sao-1819020575>	Regional Part Of Cell Component
+<http://uri.neuinfo.org/nif/nifstd/sao732341560>		Pinceau	<http://uri.neuinfo.org/nif/nifstd/sao508165343>	Supra Cellular Structure
+<http://uri.neuinfo.org/nif/nifstd/sao1974433376>		Regional Part Of Epithelial Cell	<http://uri.neuinfo.org/nif/nifstd/sao340271629>	Regional Part Of Cell
+<http://uri.neuinfo.org/nif/nifstd/sao-961694769>		Excrescence	<http://uri.neuinfo.org/nif/nifstd/sao-250931889>	Neuron Protrusion
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090208>		Endoneurial Space	<http://www.ifomis.org/bfo/1.1/snap#Site>
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090206>		Proteasome	<http://uri.neuinfo.org/nif/nifstd/sao26622963>	Protein
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090207>		Synaptophysin	<http://uri.neuinfo.org/nif/nifstd/sao26622963>	Protein
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090204>		Astrocyte Sheath	<http://uri.neuinfo.org/nif/nifstd/sao1630537580>	Astrocyte Process
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090205>		Cytochrome c	<http://uri.neuinfo.org/nif/nifstd/sao26622963>	Protein
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090202>		Flame-shaped Neurofibrillary Tangle	<http://uri.neuinfo.org/nif/nifstd/sao2409833926>	Neurofibrillary Tangle
+<http://uri.neuinfo.org/nif/nifstd/sao1037637579>		Membrane Cargo	<http://uri.neuinfo.org/nif/nifstd/sao1490223249>	Vesicle Cargo
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090201>		Star-shaped Neurofibrillary Tangle	<http://uri.neuinfo.org/nif/nifstd/sao2409833926>	Neurofibrillary Tangle
+<http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary>	
+<http://uri.neuinfo.org/nif/nifstd/sao873654461>		Nodal Complex	<http://uri.neuinfo.org/nif/nifstd/sao508165343>	Supra Cellular Structure
+<http://uri.neuinfo.org/nif/nifstd/sao1536532595>		Sessile Dendritic Spine	<http://uri.neuinfo.org/nif/nifstd/sao1799103720>	Dendritic Spine
+<http://uri.neuinfo.org/nif/nifstd/sao976831666>		Lumen Cargo	<http://uri.neuinfo.org/nif/nifstd/sao1490223249>	Vesicle Cargo
+<http://uri.neuinfo.org/nif/nifstd/sao1969557946>		Coated Pit	<http://uri.neuinfo.org/nif/nifstd/sao-1337158144>	Cellular Component
+<http://uri.neuinfo.org/nif/nifstd/birnlex_2534>		Intrinsic neuron role	<http://uri.neuinfo.org/nif/nifstd/birnlex_2537>	Functional role of nerve cell
+<http://uri.neuinfo.org/nif/nifstd/birnlex_2536>		Functional role of cell	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_090803>	Cell role
+<http://uri.neuinfo.org/nif/nifstd/birnlex_2537>		Functional role of nerve cell	<http://uri.neuinfo.org/nif/nifstd/birnlex_2536>	Functional role of cell
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_090803>		Cell role	<http://www.ifomis.org/bfo/1.1/snap#Role>
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_090802>		Neuronal Cytoplasmic Inclusion	<http://uri.neuinfo.org/nif/nifstd/sao120573470>	Cellular Inclusion
+<http://uri.neuinfo.org/nif/nifstd/sao666410040>		Mitochondrial Subcomponent	<http://uri.neuinfo.org/nif/nifstd/sao628508602>	Cellular Subcomponent
+<http://uri.neuinfo.org/nif/nifstd/sao1152983960>		Intercalated Disk	<http://uri.neuinfo.org/nif/nifstd/sao1299635018>	Cell Cell Contact Zone
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_090801>		Glial Inclusion	<http://uri.neuinfo.org/nif/nifstd/sao120573470>	Cellular Inclusion
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_090901>		Cajal body	<http://uri.neuinfo.org/nif/nifstd/sao120573470>	Cellular Inclusion
+<http://uri.neuinfo.org/nif/nifstd/sao2038461087>		Active Zone Plasma Membrane	<http://uri.neuinfo.org/nif/nifstd/sao1911631652>	Pre-synaptic Active Zone Component
+<http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate>	
+<http://uri.neuinfo.org/nif/nifstd/sao1289190043>		Cellular Space	<http://www.ifomis.org/bfo/1.1/snap#Site>
+<http://uri.neuinfo.org/nif/nifstd/sao877341397>		Regional Part Of Tanycyte	<http://uri.neuinfo.org/nif/nifstd/sao895885284>	Regional Part Of Glial Cell
+<http://uri.neuinfo.org/nif/nifstd/sao1908934319>		Intranuclear Membrane Space	<http://uri.neuinfo.org/nif/nifstd/sao1289190043>	Cellular Space
+<http://uri.neuinfo.org/nif/nifstd/sao1635329413>		Cytoskeletal Element	<http://uri.neuinfo.org/nif/nifstd/sao-1337158144>	Cellular Component
+<http://uri.neuinfo.org/nif/nifstd/sao2006047981>		Microfilament	<http://uri.neuinfo.org/nif/nifstd/sao1635329413>	Cytoskeletal Element
+<http://uri.neuinfo.org/nif/nifstd/sao864921383>		Regional Part Of Neuron	<http://uri.neuinfo.org/nif/nifstd/sao340271629>	Regional Part Of Cell
+<http://uri.neuinfo.org/nif/nifstd/sao1911631652>		Pre-synaptic Active Zone Component	<http://uri.neuinfo.org/nif/nifstd/sao386529203>	Pre-synaptic Component
+<http://uri.neuinfo.org/nif/nifstd/sao8663416959>		Autophagosome	<http://uri.neuinfo.org/nif/nifstd/sao221389602>	Vesicle
+<http://uri.neuinfo.org/nif/nifstd/sao1570660411>		Tubular Endosome	<http://uri.neuinfo.org/nif/nifstd/sao1720343330>	Endosome
+<http://uri.neuinfo.org/nif/nifstd/sao895885284>		Regional Part Of Glial Cell	<http://uri.neuinfo.org/nif/nifstd/sao340271629>	Regional Part Of Cell
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090702>		Late Endosome	<http://uri.neuinfo.org/nif/nifstd/sao1720343330>	Endosome
+<http://uri.neuinfo.org/nif/nifstd/sao1956231674>		Golgi Lumen	<http://uri.neuinfo.org/nif/nifstd/sao1289190043>	Cellular Space
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090701>		Early Endosome	<http://uri.neuinfo.org/nif/nifstd/sao1720343330>	Endosome
+<http://uri.neuinfo.org/nif/nifstd/birnlex_10>		Constitutional part of cell	<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>
+<http://uri.neuinfo.org/nif/nifstd/sao685712019>		Regional Part Of Astrocyte	<http://uri.neuinfo.org/nif/nifstd/sao895885284>	Regional Part Of Glial Cell
+<http://uri.neuinfo.org/nif/nifstd/sao183270081>		Subregional Part Of Neuron Process	<http://uri.neuinfo.org/nif/nifstd/sao-420949334>	Regional Part Of Neuron Process
+<http://uri.neuinfo.org/nif/nifstd/sao1455064842>		Vesicle Subcomponent	<http://uri.neuinfo.org/nif/nifstd/sao628508602>	Cellular Subcomponent
+<http://uri.neuinfo.org/nif/nifstd/birnlex_13>		Sample population	<http://uri.neuinfo.org/nif/nifstd/sao2254405550>	Population
+<http://uri.neuinfo.org/nif/nifstd/sao628508602>		Cellular Subcomponent	<http://uri.neuinfo.org/nif/nifstd/sao-1337158144>	Cellular Component
+<http://uri.neuinfo.org/nif/nifstd/sao1791490892>		Regional Part Of Myelinated Axon	<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>
+<http://uri.neuinfo.org/nif/nifstd/sao-234066064>		Paranode	<http://uri.neuinfo.org/nif/nifstd/sao-596411490>	Node Related Site
+<http://uri.neuinfo.org/nif/nifstd/sao991156472>		Cell Component Aggregate Object	<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>
+<http://uri.neuinfo.org/nif/nifstd/sao508165343>		Supra Cellular Structure	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100315>	Subcellular entity
+<http://uri.neuinfo.org/nif/nifstd/sao4785563283>		Amyloid Aggregate	<http://uri.neuinfo.org/nif/nifstd/sao7016027781>	Protein Aggregate
+<http://uri.neuinfo.org/nif/nifstd/sao1571698684>		Barr Body	<http://uri.neuinfo.org/nif/nifstd/sao1499850686>	Nuclear Subcomponent
+<http://uri.neuinfo.org/nif/nifstd/sao295057932>		Dendriole	<http://uri.neuinfo.org/nif/nifstd/sao28175134>	Terminal Specialization
+<http://uri.neuinfo.org/nif/nifstd/nifext_142>		<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>
+<http://uri.neuinfo.org/nif/nifstd/sao1683772610>		Endosomal Subcomponent	<http://uri.neuinfo.org/nif/nifstd/sao628508602>	Cellular Subcomponent
+<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>	
+<http://uri.neuinfo.org/nif/nifstd/sao671419673>		Microvilli	<http://uri.neuinfo.org/nif/nifstd/sao1974433376>	Regional Part Of Epithelial Cell
+<http://uri.neuinfo.org/nif/nifstd/sao7561423738>		Filament	<http://uri.neuinfo.org/nif/nifstd/sao3826089237>	Aggregate Object
+<http://uri.neuinfo.org/nif/nifstd/sao2254405550>		Population	<http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate>
+<http://uri.neuinfo.org/nif/nifstd/sao2108323256>		Pre-synaptic Site	<http://uri.neuinfo.org/nif/nifstd/sao-946766835>	Synaptic Site
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090211>		Calnexin	<http://uri.neuinfo.org/nif/nifstd/sao26622963>	Protein
+<http://uri.neuinfo.org/nif/nifstd/sao577473346>		Vesicle Other	<http://uri.neuinfo.org/nif/nifstd/sao180601769>	Cytoplasmic Vesicle
+<http://uri.neuinfo.org/nif/nifstd/sao9537723288>		Neuropil Thread	<http://uri.neuinfo.org/nif/nifstd/sao3826089237>	Aggregate Object
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100210>		Glial scar	<http://uri.neuinfo.org/nif/nifstd/sao508165343>	Supra Cellular Structure
+<http://uri.neuinfo.org/nif/nifstd/sao793088923>		Nissl Body	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100315>	Subcellular entity
+<http://uri.neuinfo.org/nif/nifstd/sao317384566>		Stubby Dendritic Spine	<http://uri.neuinfo.org/nif/nifstd/sao1799103720>	Dendritic Spine
+<http://uri.neuinfo.org/nif/nifstd/sao1189060993>		Vellous Process	<http://uri.neuinfo.org/nif/nifstd/sao1630537580>	Astrocyte Process
+<http://uri.neuinfo.org/nif/nifstd/sao1586851177>		Regional Part Of Basket cell axon	<http://uri.neuinfo.org/nif/nifstd/sao280355188>	Regional Part Of Axon
+<http://uri.neuinfo.org/nif/nifstd/sao289211478>		Chemical Synapse	<http://uri.neuinfo.org/nif/nifstd/sao914572699>	Synapse
+<http://uri.neuinfo.org/nif/nifstd/sao-82111036>		Cell Protrusion	<http://uri.neuinfo.org/nif/nifstd/sao340271629>	Regional Part Of Cell
+<http://uri.neuinfo.org/nif/nifstd/sao1186642361>		Oligodendrocyte Compact Myelin	<http://uri.neuinfo.org/nif/nifstd/sao1279474730>	Oligodendrocyte Myelin Sheath
+<http://uri.neuinfo.org/nif/nifstd/sao-3012335077>		Junction Complex	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100315>	Subcellular entity
+<http://uri.neuinfo.org/nif/nifstd/sao203987954>		Axonal Growth Cone	<http://uri.neuinfo.org/nif/nifstd/sao280355188>	Regional Part Of Axon
+<http://uri.neuinfo.org/nif/nifstd/sao7016027781>		Protein Aggregate	<http://uri.neuinfo.org/nif/nifstd/sao3826089237>	Aggregate Object
+<http://uri.neuinfo.org/nif/nifstd/sao-1367457321>		Mitochondrial Site	<http://www.ifomis.org/bfo/1.1/snap#Site>
+<http://uri.neuinfo.org/nif/nifstd/sao587858733>		Glomerulus	<http://uri.neuinfo.org/nif/nifstd/sao205380252>	Neuropil
+<http://uri.neuinfo.org/nif/nifstd/birnlex_8>	
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100205>		Blood brain barrier	<http://uri.neuinfo.org/nif/nifstd/sao508165343>	Supra Cellular Structure
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_20090106>		Transferrin	<http://uri.neuinfo.org/nif/nifstd/sao26622963>	Protein
+<http://uri.neuinfo.org/nif/nifstd/sao1049717962>		Regional Part Of Neuronal Cell Body	<http://uri.neuinfo.org/nif/nifstd/sao864921383>	Regional Part Of Neuron
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100203>		Grumose foamy spheroid body	<http://uri.neuinfo.org/nif/nifstd/sao508165343>	Supra Cellular Structure
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100209>		Glia limitans	<http://uri.neuinfo.org/nif/nifstd/sao508165343>	Supra Cellular Structure
+<http://uri.neuinfo.org/nif/nifstd/sao1499850686>		Nuclear Subcomponent	<http://uri.neuinfo.org/nif/nifstd/sao628508602>	Cellular Subcomponent
+<http://uri.neuinfo.org/nif/nifstd/sao1241866791>		Large Vesicle	<http://uri.neuinfo.org/nif/nifstd/sao1362520468>	Endocytic Vesicle
+<http://xmlns.com/foaf/0.1/Document>	
+<http://uri.neuinfo.org/nif/nifstd/sao488120195>		Calyx	<http://uri.neuinfo.org/nif/nifstd/sao2007137787>	Axon Terminal
+<http://uri.neuinfo.org/nif/nifstd/sao1507566336>		Post-synaptic Component	<http://uri.neuinfo.org/nif/nifstd/sao1784069613>	Synaptic Component
+<http://uri.neuinfo.org/nif/nifstd/sao9615155060>		Senile Plaque	<http://uri.neuinfo.org/nif/nifstd/sao9137852997>	Plaque
+<http://uri.neuinfo.org/nif/nifstd/sao1279474730>		Oligodendrocyte Myelin Sheath	<http://uri.neuinfo.org/nif/nifstd/sao831502550>	Regional Part Of Oligodendrocyte
+<http://uri.neuinfo.org/nif/nifstd/sao1395777368>		Intercellular Junction	<http://uri.neuinfo.org/nif/nifstd/sao508165343>	Supra Cellular Structure
+<http://uri.neuinfo.org/nif/nifstd/sao1579007712>		Cell Interior	<http://www.ifomis.org/bfo/1.1/snap#Site>
+<http://uri.neuinfo.org/nif/nifstd/sao571652273>		Node Of Ranvier	<http://uri.neuinfo.org/nif/nifstd/_birnlex_retired_class>
+<http://uri.neuinfo.org/nif/nifstd/sao1111202255>		Pre-synaptic Dense Body	<http://uri.neuinfo.org/nif/nifstd/sao386529203>	Pre-synaptic Component
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100315>		Subcellular entity	<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>
+<http://uri.neuinfo.org/nif/nifstd/sao6603990120>		Paired Helical Filament	<http://uri.neuinfo.org/nif/nifstd/sao7561423738>	Filament
+<http://uri.neuinfo.org/nif/nifstd/sao561419532>		Golgi Lamellae	<http://uri.neuinfo.org/nif/nifstd/sao624292949>	Golgi Subcomponent
+<http://uri.neuinfo.org/nif/nifstd/sao-1828894864>		Cell Process	<http://uri.neuinfo.org/nif/nifstd/sao340271629>	Regional Part Of Cell
+<http://uri.neuinfo.org/nif/nifstd/sao2135015805>		Extracellular Surface	<http://uri.neuinfo.org/nif/nifstd/sao1329750433>	Membrane Surface
+<http://www.ifomis.org/bfo/1.1/snap#Role>	
+<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100307>		Regional Part Of Granule Cell Axon	<http://uri.neuinfo.org/nif/nifstd/sao280355188>	Regional Part Of Axon
+<http://uri.neuinfo.org/nif/nifstd/sao1490223249>		Vesicle Cargo	<http://uri.neuinfo.org/nif/nifstd/sao1455064842>	Vesicle Subcomponent
+<http://uri.neuinfo.org/nif/nifstd/sao403156667>		Docked Vesicle	<http://uri.neuinfo.org/nif/nifstd/sao577473346>	Vesicle Other
+<http://uri.neuinfo.org/nif/nifstd/sao5051906853>		Fibril	<http://uri.neuinfo.org/nif/nifstd/sao7561423738>	Filament
+<http://uri.neuinfo.org/nif/nifstd/sao1894609662>		Regional Part Of Lewy Body	<http://uri.neuinfo.org/nif/nifstd/sao-1819020575>	Regional Part Of Cell Component
+<http://uri.neuinfo.org/nif/nifstd/sao624292949>		Golgi Subcomponent	<http://uri.neuinfo.org/nif/nifstd/sao628508602>	Cellular Subcomponent
+<http://uri.neuinfo.org/nif/nifstd/sao1139385046>		Free Ribosome	<http://uri.neuinfo.org/nif/nifstd/sao1429207766>	Ribosome
+<http://uri.neuinfo.org/nif/nifstd/sao1231384859>		<http://uri.neuinfo.org/nif/nifstd/sao-1337158144>	Cellular Component
+<http://uri.neuinfo.org/nif/nifstd/sao1956738165>		Macular Adhaerentia	<http://uri.neuinfo.org/nif/nifstd/sao1922892319>	Intercellular Junction Site
+<http://uri.neuinfo.org/nif/nifstd/sao452970150>		Membrane Receptor	<http://uri.neuinfo.org/nif/nifstd/sao26622963>	Protein
+<http://uri.neuinfo.org/nif/nifstd/sao205380252>		Neuropil	<http://uri.neuinfo.org/nif/nifstd/sao508165343>	Supra Cellular Structure
+<http://uri.neuinfo.org/nif/nifstd/sao1074198261>		Post-synaptic Site	<http://uri.neuinfo.org/nif/nifstd/sao-946766835>	Synaptic Site
+<http://purl.org/dc/dcmitype/Image>	
+<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>	
+<http://uri.neuinfo.org/nif/nifstd/sao138219748>		Vesicular Component	<http://uri.neuinfo.org/nif/nifstd/sao1546288504>	Regional Part Of Golgi
+<http://uri.neuinfo.org/nif/nifstd/sao1122901839>		Dark Material	<http://uri.neuinfo.org/nif/nifstd/sao7016027781>	Protein Aggregate
+<http://uri.neuinfo.org/nif/nifstd/sao9117790637>		Extracellular Structure	<http://uri.neuinfo.org/nif/nifstd/nlx_subcell_100315>	Subcellular entity
+<http://uri.neuinfo.org/nif/nifstd/sao1546288504>		Regional Part Of Golgi	<http://uri.neuinfo.org/nif/nifstd/sao-1819020575>	Regional Part Of Cell Component
+<http://uri.neuinfo.org/nif/nifstd/sao1506103497>		Mixed Synapse	<http://uri.neuinfo.org/nif/nifstd/sao914572699>	Synapse
